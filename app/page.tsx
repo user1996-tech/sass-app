@@ -3,6 +3,13 @@ import Link from "next/link";
 import DemoGif from "@/images/landingPage/demo.gif";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/public/auth";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Chat With Anyone",
+  description:
+    "You speak your language, they speak their language. Let AI handle the translation",
+};
 
 export default async function Home() {
   const session = await getServerSession(authOptions);

@@ -24,7 +24,7 @@ function SubscriptionProvider({ children }: { children: React.ReactNode }) {
           console.log("User has NO subscription");
           setSubscription(null);
         } else {
-          console.log("User has subscription");
+          // console.log("User has subscription");
           setSubscription(snapshot.docs[0].data());
         }
       },

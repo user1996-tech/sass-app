@@ -18,6 +18,7 @@ const CheckoutButton = () => {
     subscription?.status === "active" && subscription?.role === "pro";
 
   useEffect(() => {
+    console.log("CHECKOUT BUTTON");
     console.log(subscription);
   }, [subscription]);
 
